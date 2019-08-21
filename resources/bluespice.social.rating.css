@@ -1,0 +1,22 @@
+.bs-rating-bssocial {
+	display: inline-block;
+	margin-right: 8px;
+}
+.bs-rating-bssocial-button, .bs-rating-bssocial-numvotes {
+	display: inline-block;
+	cursor: pointer;
+}
+.bs-rating-bssocial-numvotes.uservoted {
+	font-size: 11px;
+}
+.bs-rating-bssocial-button::after {
+	content: '\e9a9';
+	font-family: 'icomoon';
+	font-size: 13px;
+	color: grey;
+	display: inline-block;
+	font-weight: bold;
+}
+.bs-rating-bssocial-button.uservoted::after, .bs-rating-bssocial-numvotes.uservoted {
+	color: #3e5389 !important;
+}
