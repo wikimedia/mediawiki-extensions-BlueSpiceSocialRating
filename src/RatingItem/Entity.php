@@ -29,6 +29,7 @@
  * @filesource
  */
 namespace BlueSpice\Social\Rating\RatingItem;
+
 use BlueSpice\Rating\RatingItem;
 use MediaWiki\MediaWikiServices;
 
@@ -78,18 +79,29 @@ class Entity extends RatingItem {
 		return $aData;
 	}
 
-	public function vote( \User $oUser, $mValue, \User $oOwner = null, $iContext = 0, \Title $oTitle = null) {
-		if( !$oTitle instanceof \Title ) {
+	/**
+	 *
+	 * @param \User $oUser
+	 * @param mixed $mValue
+	 * @param \User|null $oOwner
+	 * @param int $iContext
+	 * @param \Title|null $oTitle
+	 * @return \Status
+	 */
+	public function vote( \User $oUser, $mValue, \User $oOwner = null, $iContext = 0,
+		\Title $oTitle = null ) {
+		if ( !$oTitle instanceof \Title ) {
 			$oTitle = $this->getEntity()->getRelatedTitle();
 		}
 		$oStatus = parent::vote( $oUser, $mValue, $oOwner, $iContext, $oTitle );
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			return $oStatus;
 		}
 
 		$entity = $this->getEntity();
-		if( !$entity instanceof SocialEntity ) {
-			return \Status::newFatal( 'invalid Entity' );//TODO:: msg
+		if ( !$entity instanceof SocialEntity ) {
+			// TODO:: msg
+			return \Status::newFatal( 'invalid Entity' );
 		}
 		$entity->invalidateCache();
 		return $oStatus;

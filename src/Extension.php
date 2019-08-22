@@ -27,4 +27,5 @@
  */
 namespace BlueSpice\Social\Rating;
 
-class Extension extends \BlueSpice\Extension {}
+class Extension extends \BlueSpice\Extension {
+}
