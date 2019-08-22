@@ -36,13 +36,26 @@ use BlueSpice\Rating\RatingConfig;
 class Entity extends RatingConfig {
 	protected $type = 'bssocial';
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_RatingClass() {
 		return "\\BlueSpice\\Social\\Rating\\RatingItem\\Entity";
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_TypeMsgKey() {
 		return "bs-socialrating-types-bssocial";
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function get_ModuleScripts() {
 		return array_merge(
 			parent::get_ModuleScripts(), [
@@ -50,6 +63,11 @@ class Entity extends RatingConfig {
 			]
 		);
 	}
+
+	/**
+	 *
+	 * @return array
+	 */
 	protected function get_ModuleStyles() {
 		return array_merge(
 			parent::get_ModuleStyles(),
@@ -57,21 +75,37 @@ class Entity extends RatingConfig {
 		);
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function get_AllowedValues() {
 		return [ 1 ];
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_UserCanRemoveVote() {
 		return true;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_PermissionTitleRequired() {
 		return true;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function get_HTMLTagOptions() {
 		return array_merge_recursive( parent::get_HTMLTagOptions(), [
-			'class' => ['bs-rating-bssocial'],
-		]);
+			'class' => [ 'bs-rating-bssocial' ],
+		] );
 	}
 }

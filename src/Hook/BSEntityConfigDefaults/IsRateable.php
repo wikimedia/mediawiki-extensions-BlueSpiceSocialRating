@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\Social\Rating\Hook\BSEntityConfigDefaults;
+
 use BlueSpice\Hook\BSEntityConfigDefaults;
 
 class IsRateable extends BSEntityConfigDefaults {
