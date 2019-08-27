@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\Social\Rating\Hook\BSEntityConfigAttributeDefinitions;
+
 use BlueSpice\Hook\BSEntityConfigAttributeDefinitions;
 use BlueSpice\Social\EntityConfig;
 use BlueSpice\Data\Entity\Schema;
@@ -12,10 +13,10 @@ use BlueSpice\Data\FieldType;
 class AddRating extends BSEntityConfigAttributeDefinitions {
 
 	protected function skipProcessing() {
-		if( !$this->entityConfig instanceof EntityConfig ) {
+		if ( !$this->entityConfig instanceof EntityConfig ) {
 			return true;
 		}
-		if( !$this->entityConfig->get( 'IsRateable' ) ) {
+		if ( !$this->entityConfig->get( 'IsRateable' ) ) {
 			return true;
 		}
 		return parent::skipProcessing();

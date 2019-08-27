@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\Social\Rating\Hook\BSSocialEntityOutputRenderAfterContent;
+
 use BlueSpice\Social\Hook\BSSocialEntityOutputRenderAfterContent;
 use BlueSpice\Social\Entity;
 
@@ -12,19 +13,19 @@ class AddRatingSection extends BSSocialEntityOutputRenderAfterContent {
 	protected function doProcess() {
 		$entity = $this->oEntityOutput->getEntity();
 
-		if( !$entity instanceof Entity ) {
+		if ( !$entity instanceof Entity ) {
 			return true;
 		}
-		if( !$entity->getConfig()->get( 'IsRateable' ) ) {
+		if ( !$entity->getConfig()->get( 'IsRateable' ) ) {
 			return true;
 		}
-		if( !$entity->exists() ) {
+		if ( !$entity->exists() ) {
 			return true;
 		}
 		$factory = $this->getServices()->getService( 'BSRatingFactoryEntity' );
 		$ratingItem = $factory->newFromEntity( $entity );
 
-		$this->aViews[] =$ratingItem->getTag();
+		$this->aViews[] = $ratingItem->getTag();
 		return true;
 	}
 }

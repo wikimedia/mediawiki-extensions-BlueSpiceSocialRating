@@ -26,6 +26,7 @@
  * @filesource
  */
 namespace BlueSpice\Social\Rating\RatingFactory;
+
 use BlueSpice\Rating\RatingFactory;
 use BlueSpice\Rating\Data\Record;
 use BlueSpice\Social\Entity as SocialEntity;
@@ -37,9 +38,9 @@ class Entity extends RatingFactory {
 	 * @return \BlueSpice\Social\Rating\RatingItem\Entity
 	 */
 	public function newFromEntity( SocialEntity $entity ) {
-		return $this->newFromObject((object) array(
+		return $this->newFromObject( (object)[
 			Record::REFTYPE => 'bssocial',
 			Record::REF => $entity->get( SocialEntity::ATTR_ID ),
-		));
+		] );
 	}
 }
