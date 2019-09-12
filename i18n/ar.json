@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"HitomiAkane",
+			"ديفيد"
+		]
+	},
+	"bs-socialrating-desc": "وظيفة تقييم اكيانات BlueSpiceSocial",
+	"bs-socialrating-aftercontent-ratingtext": "موصى به ($1)",
+	"bs-socialrating-var-rating": "موصى به"
+}
