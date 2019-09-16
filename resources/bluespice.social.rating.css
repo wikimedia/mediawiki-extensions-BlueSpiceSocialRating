@@ -7,7 +7,7 @@
 	cursor: pointer;
 }
 .bs-rating-bssocial-numvotes.uservoted {
-	font-size: 11px;
+	font-size: 14px;
 }
 .bs-rating-bssocial-button::after {
 	content: '\e9a9';
