@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mansil alfalb"
+		]
+	},
+	"bs-socialrating-desc": "Funcionalidade de classificação para entidades de BlueSpiceSocial",
+	"bs-socialrating-aftercontent-ratingtext": "Recomendar ($1)",
+	"bs-socialrating-var-rating": "Recomendado"
+}
