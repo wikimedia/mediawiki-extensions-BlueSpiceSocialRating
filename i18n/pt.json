@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"Hamilton Abreu"
 		]
 	},
-	"bs-socialrating-desc": "Funcionalidade de classificação para entidades de BlueSpiceSocial",
+	"bs-socialrating-desc": "Funcionalidade de classificação para as entidades de BlueSpiceSocial",
 	"bs-socialrating-aftercontent-ratingtext": "Recomendar ($1)",
 	"bs-socialrating-var-rating": "Recomendado"
 }
