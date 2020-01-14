@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Social\Rating\Hook\BSSocialEntityOutputRenderAfterContent;
 
-use BlueSpice\Social\Hook\BSSocialEntityOutputRenderAfterContent;
 use BlueSpice\Social\Entity;
+use BlueSpice\Social\Hook\BSSocialEntityOutputRenderAfterContent;
 
 /**
  * Adds a "Like"-like rating to every entity view

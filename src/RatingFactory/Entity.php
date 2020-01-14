@@ -27,8 +27,8 @@
  */
 namespace BlueSpice\Social\Rating\RatingFactory;
 
-use BlueSpice\Rating\RatingFactory;
 use BlueSpice\Rating\Data\Record;
+use BlueSpice\Rating\RatingFactory;
 use BlueSpice\Social\Entity as SocialEntity;
 
 class Entity extends RatingFactory {

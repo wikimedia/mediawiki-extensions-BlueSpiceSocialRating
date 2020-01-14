@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Social\Rating\Hook\BSEntityConfigAttributeDefinitions;
 
-use BlueSpice\Hook\BSEntityConfigAttributeDefinitions;
-use BlueSpice\Social\EntityConfig;
 use BlueSpice\Data\Entity\Schema;
 use BlueSpice\Data\FieldType;
+use BlueSpice\Hook\BSEntityConfigAttributeDefinitions;
+use BlueSpice\Social\EntityConfig;
 
 /**
  * Adds rating to the entity attribute definitions
