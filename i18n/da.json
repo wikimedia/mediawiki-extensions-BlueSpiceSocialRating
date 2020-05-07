@@ -4,5 +4,6 @@
 			"Saederup92"
 		]
 	},
-	"bs-socialrating-var-rating": "Anbefalet"
+	"bs-socialrating-var-rating": "Anbefalet",
+	"bs-socialrating-aftercontent-ratingtext": "Anbefal ($1)"
 }
