@@ -31,9 +31,8 @@
 namespace BlueSpice\Social\Rating\RatingItem;
 
 use BlueSpice\Rating\RatingItem;
-use BlueSpice\Services;
-
 use BlueSpice\Social\Entity as SocialEntity;
+use MediaWiki\MediaWikiServices;
 
 /**
  * Entity class for Rating extension
@@ -51,7 +50,7 @@ class Entity extends RatingItem {
 	 * @return \BlueSpice\Entity
 	 */
 	public static function newFromEntity( SocialEntity $entity ) {
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSRatingFactoryEntity'
 		);
 		return $factory->newFromEntity( $entity );
@@ -62,7 +61,7 @@ class Entity extends RatingItem {
 	 * @return SocialEntity
 	 */
 	public function getEntity() {
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSEntityFactory'
 		);
 		return $factory->newFromID( (int)$this->getRef(), SocialEntity::NS );
