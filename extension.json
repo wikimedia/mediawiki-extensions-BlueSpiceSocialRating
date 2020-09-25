@@ -45,6 +45,7 @@
 	"ResourceModules": {
 		"ext.bluespice.ratingItemBSSocial": {
 			"scripts": [
+				"EntityActionMenu/Rating.js",
 				"bluespice.social.rating.js",
 				"bluespice.ratingItemBSSocial.js"
 			],
@@ -70,10 +71,10 @@
 	},
 	"Hooks": {
 		"BSEntityConfigDefaults": "\\BlueSpice\\Social\\Rating\\Hook\\BSEntityConfigDefaults\\IsRateable::callback",
-		"BSSocialEntityOutputRenderAfterContent": "\\BlueSpice\\Social\\Rating\\Hook\\BSSocialEntityOutputRenderAfterContent\\AddRatingSection::callback",
 		"BSEntityGetFullData": "\\BlueSpice\\Social\\Rating\\Hook\\BSEntityGetFullData\\AddRating::callback",
 		"BSSocialModuleDepths": "\\BlueSpice\\Social\\Rating\\Hook\\BSSocialModuleDepths\\AddModules::callback",
-		"BSEntityConfigAttributeDefinitions": "\\BlueSpice\\Social\\Rating\\Hook\\BSEntityConfigAttributeDefinitions\\AddRating::callback"
+		"BSEntityConfigAttributeDefinitions": "\\BlueSpice\\Social\\Rating\\Hook\\BSEntityConfigAttributeDefinitions\\AddRating::callback",
+		"BSSocialEntityGetActions": "\\BlueSpice\\Social\\Rating\\Hook\\BSSocialEntityGetActions\\AddRating::callback"
 	},
 	"manifest_version": 2
 }
