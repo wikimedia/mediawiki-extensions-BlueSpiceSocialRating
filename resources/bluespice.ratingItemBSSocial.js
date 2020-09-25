@@ -23,16 +23,16 @@ bs.rating.ItemBSSocial = function( $el, type, data ) {
 		"click",
 		".bs-rating-bssocial-button, .bs-rating-bssocial-numvotes",
 		function() {
-		if( !me.data.get( 'usercanmodify', false ) ) {
-			return false;
-		}
-		me.addLoadingMask();
-		me.vote( me.userVoted() ? false : 1 ).done(function( result ) {
-			if( result.success === true ) {
-				me.reset( result.payload.data );
-				me.removeLoadingMask();
+			if( !me.data.get( 'usercanmodify', false ) ) {
+				return false;
 			}
-		});
+			me.addLoadingMask();
+			me.vote( me.userVoted() ? false : 1 ).done(function( result ) {
+				if( result.success === true ) {
+					me.reset( result.payload.data );
+					me.removeLoadingMask();
+				}
+			});
 		return false;
 	});
 };

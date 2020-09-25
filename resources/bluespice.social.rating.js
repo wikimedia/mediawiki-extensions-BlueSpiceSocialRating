@@ -10,9 +10,7 @@
 $( document ).bind( 'BSSocialEntityInit', function( event, Entity, $el, type, data ) {
 	bs.rating.init();
 });
-$( document ).bind( 'BSSocialEntityOutputAfterContent', function( event, EntityOutput, html, val, type ) {
-	if( !EntityOutput.args['id'] || EntityOutput.args['id'] === 0 ) {
-		return;
-	}
-	
+
+$( document ).bind( 'BSSocialEntityActionMenuInit', function( event, EntityActionMenu, $el ) {
+	EntityActionMenu.classes.rating = bs.social.EntityActionMenuRating.Rating;
 });
