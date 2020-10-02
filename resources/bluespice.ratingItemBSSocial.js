@@ -56,19 +56,19 @@ bs.rating.ItemBSSocial.prototype.reset = function( data ) {
 
 bs.rating.ItemBSSocial.prototype.makeVoteButton = function( data ) {
 	this.$voteButton = $(
-		'<span class="bs-rating-bssocial-button"></span>'
+		''
 	);
 	return this.$voteButton;
 };
 
 bs.rating.ItemBSSocial.prototype.makeNumVotes = function( data ) {
 	this.$numVotes = $(
-		'<span class="bs-rating-bssocial-numvotes">'
+		'<a class="bs-rating-bssocial-numvotes"><span>'
 		+ mw.message(
 			'bs-socialrating-aftercontent-ratingtext',
 			this.getVoteCount()
 		).parse()
-		+ '</span>'
+		+ '</a></span>'
 	);
 	return this.$numVotes;
 };
