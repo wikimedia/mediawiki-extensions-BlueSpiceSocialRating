@@ -43,20 +43,6 @@ class Entity extends RatingItem {
 	protected $refType = 'bssocial';
 
 	/**
-	 * Entity from a entity object
-	 * @deprecated since version 3.0.0 - use Service
-	 * ('BSRatingFactoryEntity')->newFromEntity instead
-	 * @param SocialEntity $entity
-	 * @return \BlueSpice\Entity
-	 */
-	public static function newFromEntity( SocialEntity $entity ) {
-		$factory = MediaWikiServices::getInstance()->getService(
-			'BSRatingFactoryEntity'
-		);
-		return $factory->newFromEntity( $entity );
-	}
-
-	/**
 	 *
 	 * @return SocialEntity
 	 */
