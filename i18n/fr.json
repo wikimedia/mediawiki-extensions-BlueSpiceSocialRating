@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92",
 			"Gomoko",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"bs-socialrating-desc": "Fonctionnalité de notation pour les entités de ''BlueSpiceSocial''",
