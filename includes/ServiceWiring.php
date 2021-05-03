@@ -4,7 +4,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSRatingFactoryEntity' => function ( MediaWikiServices $services ) {
+	'BSRatingFactoryEntity' => static function ( MediaWikiServices $services ) {
 		return new \BlueSpice\Social\Rating\RatingFactory\Entity(
 			$services->getService( 'BSRatingRegistry' ),
 			$services->getService( 'BSRatingConfigFactory' ),
