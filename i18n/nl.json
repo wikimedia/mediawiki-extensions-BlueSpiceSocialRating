@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"RadioAzureus",
 			"Siebrand"
 		]
 	},
+	"bs-socialrating-desc": "Beoordelingsfunctionaliteit voor BlueSpiceSocial-entiteiten",
 	"bs-socialrating-aftercontent-ratingtext": "Aanbevolen ($1)",
 	"bs-socialrating-var-rating": "Aanbevolen"
 }
