@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"bs-socialrating-desc": "פונקציונליות דירוג עבור ישויות BlueSpiceSocial",
+	"bs-socialrating-aftercontent-ratingtext": "להמליץ ($1)",
+	"bs-socialrating-var-rating": "הומלץ"
+}
