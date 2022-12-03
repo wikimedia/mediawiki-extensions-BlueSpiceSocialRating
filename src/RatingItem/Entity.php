@@ -53,7 +53,7 @@ class Entity extends RatingItem {
 		return $factory->newFromID( (int)$this->getRef(), SocialEntity::NS );
 	}
 
-	public function jsonSerialize() {
+	public function jsonSerialize(): array {
 		$aData = parent::jsonSerialize();
 		$oStatus = $this->userCan(
 			\RequestContext::getMain()->getUser(),
