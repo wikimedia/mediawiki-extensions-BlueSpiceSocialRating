@@ -42,6 +42,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\Social\\Rating\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\Social\\Rating\\Tests\\": "tests/phpunit/"
+	},
 	"ResourceModules": {
 		"ext.bluespice.ratingItemBSSocial": {
 			"scripts": [
