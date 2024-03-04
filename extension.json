@@ -77,7 +77,8 @@
 		"BSEntityGetFullData": "\\BlueSpice\\Social\\Rating\\Hook\\BSEntityGetFullData\\AddRating::callback",
 		"BSSocialModuleDepths": "\\BlueSpice\\Social\\Rating\\Hook\\BSSocialModuleDepths\\AddModules::callback",
 		"BSEntityConfigAttributeDefinitions": "\\BlueSpice\\Social\\Rating\\Hook\\BSEntityConfigAttributeDefinitions\\AddRating::callback",
-		"BSSocialEntityGetActions": "\\BlueSpice\\Social\\Rating\\Hook\\BSSocialEntityGetActions\\AddRating::callback"
+		"BSSocialEntityGetActions": "\\BlueSpice\\Social\\Rating\\Hook\\BSSocialEntityGetActions\\AddRating::callback",
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\Social\\Rating\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfDiscussionsRated::callback"
 	},
 	"manifest_version": 2
 }
