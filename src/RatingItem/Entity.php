@@ -40,6 +40,7 @@ use MediaWiki\MediaWikiServices;
  * @subpackage BlueSpiceSocialRating
  */
 class Entity extends RatingItem {
+	/** @var string */
 	protected $refType = 'bssocial';
 
 	/**

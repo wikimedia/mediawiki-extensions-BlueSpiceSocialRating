@@ -34,6 +34,7 @@ use BlueSpice\Rating\RatingConfig;
  * @package BlueSpiceFoundation
  */
 class Entity extends RatingConfig {
+	/** @var string */
 	protected $type = 'bssocial';
 
 	/**
