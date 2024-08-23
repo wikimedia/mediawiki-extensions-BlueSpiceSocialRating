@@ -15,7 +15,7 @@ bs.social.EntityActionMenuRating.Rating = function ( entityActionMenu, data ) {
     me.data = data || {};
     me.entityActionMenu = entityActionMenu;
     me.$element = null;
-    me.$element = $( '<li class="dropdown-item bs-rating bs-rating-bssocial" data-type="bssocial" data-item=' + me.data['data-item'] + '></li>' );
+    me.$element = $( '<li class="bs-rating bs-rating-bssocial" data-type="bssocial" data-item=' + me.data['data-item'] + '></li>' );
 
     me.priority = 70;
 };
