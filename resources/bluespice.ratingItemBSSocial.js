@@ -63,7 +63,7 @@ bs.rating.ItemBSSocial.prototype.makeVoteButton = function( data ) {
 
 bs.rating.ItemBSSocial.prototype.makeNumVotes = function( data ) {
 	this.$numVotes = $(
-		'<a class="bs-rating-bssocial-numvotes"><span>'
+		'<a class="bs-rating-bssocial-numvotes dropdown-item" tabindex="0" role="button"><span>'
 		+ mw.message(
 			'bs-socialrating-aftercontent-ratingtext',
 			this.getVoteCount()
