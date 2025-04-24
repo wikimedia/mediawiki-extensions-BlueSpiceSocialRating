@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
 	"bs-socialrating-aftercontent-ratingtext": "권장 ($1)",
-	"bs-socialrating-var-rating": "권장"
+	"bs-socialrating-var-rating": "권장",
+	"bs-socialrating-desc": "BlueSpiceSocial-entities의 평가 기능"
 }
